@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="src.common.TestListener" />
+		<listener class-name="src.common.AnnotationTransformer" />
+	</listeners>
+	<test thread-count="1" name="Test">
+		<classes>
+			<class name="src.patient.Patient" />
+		</classes>
+	</test>
+</suite> 
